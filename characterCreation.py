@@ -9,8 +9,9 @@ import time
 def character():
     n = create_name()
     t = create_type()
-    charcter = player(n, t)
+    charcter1 = player(n, t)
     print(f'Your name is {n} and you are a {t}')
+    return charcter1
 
 
 
@@ -67,17 +68,21 @@ class player:
         self.name = name
         self.type = type
 
-class tank:
+
+
+class tank(player):
     attr = {'health': 45, 'attack': 20, 'moves': ['Kick', 'Shield Bash', 'Smite']}
 
-class wizard:
+class wizard(player):
     attr = {'health': 30, 'attack': 35, 'moves': ['Lightning', 'Flame', 'Magic Blast']}
 
-class warrior:
+class warrior(player):
     attr = {'health': 40, 'attack': 25, 'moves': ['Sword Slash', 'Impale', 'Ground Slam']}
 
-class priest:
+class priest(player):
     attr = {'health': 40, 'attack': 25, 'moves': ['Heal', 'Ball of Light', 'Heavenly Smash']}
 
 
-character()
+
+
+player1 = player(create_name(), create_type())
