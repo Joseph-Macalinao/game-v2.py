@@ -68,21 +68,19 @@ class player:
         self.name = name
         self.type = type
 
+    def tank(player):
+        attr = {'health': 45, 'attack': 20, 'moves': ['Kick', 'Shield Bash', 'Smite']}
 
+    def wizard(player):
+        attr = {'health': 30, 'attack': 35, 'moves': ['Lightning', 'Flame', 'Magic Blast']}
 
-class tank(player):
-    attr = {'health': 45, 'attack': 20, 'moves': ['Kick', 'Shield Bash', 'Smite']}
+    def warrior(player):
+        attr = {'health': 40, 'attack': 25, 'moves': ['Sword Slash', 'Impale', 'Ground Slam']}
 
-class wizard(player):
-    attr = {'health': 30, 'attack': 35, 'moves': ['Lightning', 'Flame', 'Magic Blast']}
-
-class warrior(player):
-    attr = {'health': 40, 'attack': 25, 'moves': ['Sword Slash', 'Impale', 'Ground Slam']}
-
-class priest(player):
-    attr = {'health': 40, 'attack': 25, 'moves': ['Heal', 'Ball of Light', 'Heavenly Smash']}
+    def priest(player):
+        attr = {'health': 40, 'attack': 25, 'moves': ['Heal', 'Ball of Light', 'Heavenly Smash']}
 
 
 
 
-player1 = player(create_name(), create_type())
+character()
